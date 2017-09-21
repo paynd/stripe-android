@@ -15,6 +15,7 @@ import android.support.v4.graphics.drawable.DrawableCompat;
 import android.text.InputFilter;
 import android.text.Layout;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
@@ -556,6 +557,7 @@ public class CardInputWidget extends LinearLayout {
     }
 
     private void scrollLeft() {
+        Log.d("###", "scrollLeft");
         if (mCardNumberIsViewed || !mInitFlag) {
             return;
         }
@@ -634,6 +636,7 @@ public class CardInputWidget extends LinearLayout {
     }
 
     private void scrollRight() {
+        Log.d("###", "scrollRight");
         if (!mCardNumberIsViewed || !mInitFlag) {
             return;
         }
